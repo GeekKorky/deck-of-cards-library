@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="list"></ul>
+
+    <script src="decklib.js"></script>
+    <script>
+      deck = new Deck();
+      deck.generate_deck();
+      //deck.print_deck();
+      deck.shuffle();
+      //deck.print_deck();
+      console.log(deck.deal());
+    </script>
+  </body>
+</html>
